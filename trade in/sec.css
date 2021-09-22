@@ -1,0 +1,141 @@
+.sec {
+
+        background-color: rgb(13, 13, 13);
+        height: 100%;
+        width: 100vw;
+        max-width: 2560px;
+        margin: 0 auto;
+        padding-top: 60px;
+        font-family: 'Caveat';
+        text-align: right;
+}
+.s {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.this {
+    font-family: 'Caveat';
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    padding-top: 330px;
+    text-align-last: left;
+    transform: translate(-30%, 0%);
+    transition: 0.4s;
+    opacity: 0;
+    transition-delay: 0.2s;
+}
+.this.activ{
+    transform: translate(0, 0%);
+    opacity: 1;
+}
+.disc {
+    display: inline-block;
+    width: 500px;
+    padding-top: 140px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: 0;
+    transform: translate(30%, 0%);
+    transition: 0.4s;
+    opacity: 0;
+    transition-delay: 0.4s;
+    will-change: auto;
+}
+
+.disc.activ {
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .s {
+        width: 80%;
+    }
+    .this {
+        padding-top: 250px;
+        font-size: 30px;
+        padding-left: 20px;
+    }
+    .disc {
+        width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .s {
+        width: 90%;
+    }
+}
+@media (max-width: 500px) {
+    .sec {
+        text-align: center;
+    }
+    .s {
+        width: 95%;
+    }
+    .this {
+        position: relative;
+        padding-top: 70px;
+        text-align-last: center;
+    }
+    .disc {
+        padding-top: 40px;
+    }
+}
+
+
+.third {
+    background-color: rgb(13, 13, 13);
+        height: 100%;
+        width: 100vw;
+        max-width: 2560px;
+        margin: 0 auto;
+        padding-top: 60px;
+        font-family: 'Caveat';
+        text-align: center;
+}
+.matter {
+    color: #fff;
+    padding-top: 150px;
+    font-size: 55px;
+    transform: translate(0%, 40%);
+    transition: 0.4s;
+    opacity: 0;
+    transition-delay: 0.2s;
+}
+.matter.activ {
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+.world {
+    display: inline-block;
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    transform: scaleY(20%);
+    transition: 0.4s;
+    opacity: 0;
+    transition-delay: 0.4s;
+}
+.world.activ {
+    transform: scaleY(100%);
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .matter {
+        font-size: 40px;
+    }
+    .world {
+        width: 78%;
+    }
+}
+@media (max-width: 768px) {
+    .matter {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+    .world {
+        width: 95%;
+    }
+}
