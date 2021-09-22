@@ -1,0 +1,185 @@
+
+.c {
+    width: 100vw;
+    max-width: 2560px;
+    height: 100%;
+    min-height: 100vh;
+    background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+}
+.cont {
+    width: 1280px;
+    max-width: 90%;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    margin: 0 auto;
+    flex-wrap:wrap;
+}
+.contact {
+    background-color: rgba(197, 176, 176, 0);
+    font-weight: 800;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 20px;
+}
+.map {
+    padding-top: 20px;
+}
+
+.mapp {
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+}
+.socials {
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.min_soc {
+    width: 230px;
+    height: 50px;
+    background-color: rgb(251, 251, 251);
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    justify-content:space-between;
+    transform: translate(0, 50px);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.min_soc.activ {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+.min_soc:hover .logog{
+    width: 60px;
+    height: 60px;
+    margin-left: -5px;
+}
+.logog {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-top: 0;
+    align-self:center;
+    transition: 0.4s;
+}
+.name {
+    font-size: 19px;
+    font-weight: 800;
+    display: flex;
+    color: rgb(23, 23, 23);
+    align-self:center;
+    padding-right: 83px;
+}
+.namem {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    color: rgb(23, 23, 23);
+    align-self:center;
+    padding-right: 40px;
+}
+.alogog {
+    width: 250px;
+    height: 50px;
+}
+@media (max-width:1280px) {
+    .cont {
+        width: 80vw;
+        max-width: 80vw;
+    }
+    .contact {
+        font-size: 40px;
+    }
+    .map {
+        padding-top: 20px;
+    }
+    
+    .socials {
+        height: 200px;
+        width: 80vw;
+        max-width: 700px;
+        margin: 0 auto;
+        padding-top: 60px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+    .min_soc {
+        width: 230px;
+        height: 50px;
+        background-color: rgb(251, 251, 251);
+        display: flex;
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        flex: 0 1 50%;
+        justify-content:space-between;
+    }
+    .min_soc:hover .logog{
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+    }
+    .logog {
+        display: flex;
+        height: 50px;
+        width: 50px;
+        margin-top: 0;
+        align-self:center;
+        transition: 0.4s;
+    }
+    .name {
+        font-size: 19px;
+        font-weight: 800;
+        display: flex;
+        color: rgb(23, 23, 23);
+        align-self:center;
+        padding-right: 83px;
+    }
+    .namem {
+        font-size: 20px;
+        font-weight: 800;
+        display: flex;
+        color: rgb(23, 23, 23);
+        align-self:center;
+        padding-right: 40px;
+    }
+    .alogog {
+        width: 250px;
+        height: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .socials {
+        flex-wrap: nowrap;
+        display: block;
+        padding-bottom: 270px;
+    }
+    .min_soc {
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 30px;
+        flex: 0 1 200px;
+    }
+    .name {
+        padding-right: 55px;
+    }
+    .namem {
+        padding-right: 10px;
+    }
+}
